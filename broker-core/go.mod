@@ -1,4 +1,4 @@
-module github.com/jviniciusoliveira/homebroker-fullcycle/go
+module github.com/jviniciusoliveira/homebroker-fullcycle/broker-core/go
 
 go 1.20
 

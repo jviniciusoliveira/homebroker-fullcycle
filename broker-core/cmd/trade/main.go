@@ -6,10 +6,10 @@ import (
 	"sync"
 
 	ckafka "github.com/confluentinc/confluent-kafka-go/kafka"
-	"github.com/jviniciusoliveira/homebroker-fullcycle/go/internal/infra/kafka"
-	"github.com/jviniciusoliveira/homebroker-fullcycle/go/internal/market/dto"
-	"github.com/jviniciusoliveira/homebroker-fullcycle/go/internal/market/entity"
-	"github.com/jviniciusoliveira/homebroker-fullcycle/go/internal/market/transformer"
+	"github.com/jviniciusoliveira/homebroker-fullcycle/broker-core/go/internal/infra/kafka"
+	"github.com/jviniciusoliveira/homebroker-fullcycle/broker-core/go/internal/market/dto"
+	"github.com/jviniciusoliveira/homebroker-fullcycle/broker-core/go/internal/market/entity"
+	"github.com/jviniciusoliveira/homebroker-fullcycle/broker-core/go/internal/market/transformer"
 )
 
 func main() {
