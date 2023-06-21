@@ -18,11 +18,11 @@ POST http://localhost:3000/wallets
 Content-Type: application/json
 
 {
-  "id": "wallet1"
+  "id": "wallet2"
 }
 
 ###
-GET http://localhost:3000/wallets/wallet1/assets
+GET http://localhost:3000/wallets/wallet2/assets
 
 ###
 POST http://localhost:3000/wallets/wallet1/assets
@@ -30,21 +30,21 @@ Content-Type: application/json
 
 {
   "asset_id": "CVCB3",
-  "shares": 10
+  "shares": 20
 }
 
 ###
-GET http://localhost:3000/wallets/wallet1/orders
+GET http://localhost:3000/wallets/wallet2/orders
 
 ###
-POST http://localhost:3000/wallets/wallet1/orders
+POST http://localhost:3000/wallets/wallet2/orders
 Content-Type: application/json
 
 {
   "asset_id": "CVCB3",
-  "shares": 2,
+  "shares": 3,
   "price": 100,
-  "type": "SELL"
+  "type": "BUY"
 }
 
 ###
@@ -56,6 +56,6 @@ Content-Type: application/json
   "status": "CLOSED",
   "related_investor_id": "investor_id_2",
   "broker_transaction_id": "12345",
-  "negotiated_shares": 2,
+  "negotiated_shares": 20,
   "price": 100
 }
