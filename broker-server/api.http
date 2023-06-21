@@ -5,8 +5,8 @@ POST http://localhost:3000/assets
 Content-Type: application/json
 
 {
-  "id": "asset1",
-  "symbol": "A1",
+  "id": "CVCB3",
+  "symbol": "CVC Brasil",
   "price": 100
 }
 
@@ -29,6 +29,33 @@ POST http://localhost:3000/wallets/wallet1/assets
 Content-Type: application/json
 
 {
-  "asset_id": "asset1",
-  "shares": 5
+  "asset_id": "CVCB3",
+  "shares": 10
+}
+
+###
+GET http://localhost:3000/wallets/wallet1/orders
+
+###
+POST http://localhost:3000/wallets/wallet1/orders
+Content-Type: application/json
+
+{
+  "asset_id": "CVCB3",
+  "shares": 2,
+  "price": 100,
+  "type": "SELL"
+}
+
+###
+POST http://localhost:3000/wallets/wallet1/orders/execute
+Content-Type: application/json
+
+{
+  "order_id": "64933c552d5e33b694cbcda7",
+  "status": "CLOSED",
+  "related_investor_id": "investor_id_2",
+  "broker_transaction_id": "12345",
+  "negotiated_shares": 2,
+  "price": 100
 }
